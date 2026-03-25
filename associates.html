@@ -35,15 +35,7 @@
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__close">+</div>
-        <ul class="offcanvas__widget">
-            <li><span class="icon_search search-switch"></span></li>
-            <li><a href="#"><span class="icon_heart_alt"></span>
-                <div class="tip">2</div>
-            </a></li>
-            <li><a href="#"><span class="icon_bag_alt"></span>
-                <div class="tip">2</div>
-            </a></li>
-        </ul>
+  
         <div class="offcanvas__logo">
             <a href="./index.html"><img src="img/logo.png" alt=""></a>
         </div>
@@ -54,237 +46,395 @@
         </div>
     </div>
     <!-- Offcanvas Menu End -->
-
     <!-- Header Section Begin -->
      <header class="header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-3 col-lg-2">
-                    <div class="header__logo">
-                      <h6 style="font-weight: 800;">PAREKH POLYFABRICS</h6>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-7">
-                    <nav class="header__menu">
-                        <ul>
-                            <li class="active"><a href="./index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                             <li><a href="./contact.html">Contact</a></li>
-                            <li><a href="./shop.html">Product</a></li>
-                            <li><a href="#">Pages</a>
-                                <ul class="dropdown">
-                                    <li><a href="productgallery.html">Product Photo Gallery</a></li>
-                                    <li><a href="management.html">Our Management</a></li>
-                                    <li><a href="enquiry.html">Trade Enquiry</a></li>
-                                    <li><a href="quotation.html">e-Quotation</a></li>
-                                    <li><a href="Auction.html">e-Auction</a></li>
-                                    <li><a href="contract.html">Tender & Contract</a></li>
-                                    <li><a href="career.html">Career Page</a></li>
-                                    <li><a href="circular.html">Circular</a></li>
-                                    <li><a href="review.html">Customer Review.</a></li>
-                                    <li><a href="appointment.html">Visit with Appointment </a></li>
-                                    <li><a href="mediagallery.html">Media Gallery </a></li>
-                                    <li><a href="associates.html">Our Textile Associates </a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./blog.html">Blog</a></li>
-                           
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-lg-3">
-                   
-                </div>
-            </div>
-            <div class="canvas__open">
-                <i class="fa fa-bars"></i>
-            </div>
-        </div>
-    </header>
-    <!-- Header Section End -->
+    <div class="container-fluid">
+        <div class="row align-items-center"> <div class="col-xl-3 col-lg-3">
+               <style>
+    /* Desktop Default Styles */
+    .responsive-logo {
+        height: 80px; /* Desktop height */
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+        display: block;
+        transition: all 0.3s ease;
+    }
 
-    <!-- Breadcrumb Begin -->
-    <div class="breadcrumb-option">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb__links">
-                        <a href="./index.html"><i class="fa fa-home"></i> Home</a>
-                        <span>Shop</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@300;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<section class="associates-section py-5">
-    <div class="container">
+    /* Mobile Responsive Styles (Screens smaller than 768px) */
+    @media (max-width: 768px) {
+        .responsive-logo {
+            height: 55px; /* Mobile par thoda chhota taaki menu ke saath fit ho sake */
+        }
         
-        <div class="row mb-5">
-            <div class="col-lg-8">
-                <h6 class="text-red fw-bold ls-2 mb-2" style="font-size: 30px;">OUR REACH</h6>
-                <h2 class="fw-800 display-5 title-font mb-3">Associates <span class="text-muted fw-300">Network</span></h2>
-                <p class="text-muted lead">HC Parekh & Associates stands as a cornerstone in the Indian textile industry, connecting major hubs through our specialized units.</p>
+        .header__logo {
+            padding: 5px 0 !important; /* Mobile par extra space kam karne ke liye */
+        }
+    }
+
+    /* Extra Small Screens (Phones) */
+    @media (max-width: 480px) {
+        .responsive-logo {
+            height: 45px;
+            margin: 15px; 
+        }
+    }
+</style>
+
+<div class="header__logo" style="display: flex; justify-content: flex-start; align-items: center; padding: 10px 0;">
+    <a href="index.html" style="display: inline-block;">
+        <img src="img/logo.png" alt="Logo" class="responsive-logo">
+    </a>
+</div>
             </div>
-        </div>
-
-        <div class="row align-items-center g-5">
-            <div class="col-lg-7">
-                <div class="map-container shadow-lg rounded-5 p-4 bg-white border">
-                    <div class="map-wrapper position-relative">
-                        <img src="https://img.freepik.com/premium-vector/map-name-india-orange-yellow-vector-illustration_968957-10807.jpg?ga=GA1.1.124606815.1772781809&semt=ais_hybrid&w=740&q=80" class="img-fluid opacity-20" alt="India Map">
-                        
-                        <div class="map-point" style="top: 25%; left: 20%;" data-bs-toggle="tooltip" title="Parekh Fabrics">
-                            <span class="pulse"></span>
-                            <span class="point-label">Parekh Fabrics</span>
-                        </div>
-
-                        <div class="map-point" style="top: 35%; left: 25%;" data-bs-toggle="tooltip" title="Parekh Silk">
-                            <span class="pulse"></span>
-                            <span class="point-label">Parekh Silk</span>
-                        </div>
-
-                        <div class="map-point" style="top: 38%; left: 45%;" data-bs-toggle="tooltip" title="Parekh Rayon">
-                            <span class="pulse"></span>
-                            <span class="point-label">Parekh Rayon</span>
-                        </div>
-
-                        <div class="map-point" style="top: 32%; left: 65%;" data-bs-toggle="tooltip" title="Parekh Linen">
-                            <span class="pulse"></span>
-                            <span class="point-label">Parekh Linen</span>
-                        </div>
-
-                        <div class="map-point" style="top: 55%; left: 40%;" data-bs-toggle="tooltip" title="Parekh e-Trade">
-                            <span class="pulse"></span>
-                            <span class="point-label">e-Trade Market</span>
-                        </div>
-
-                        <div class="map-point" style="top: 75%; left: 35%;" data-bs-toggle="tooltip" title="Chamber of Textile">
-                            <span class="pulse"></span>
-                            <span class="point-label">Chamber of Textile</span>
-                        </div>
-
-                        <div class="map-point" style="top: 75%; left: 45%;" data-bs-toggle="tooltip" title="Southern Polyfabrics">
-                            <span class="pulse-red"></span>
-                            <span class="point-label fw-bold text-red">Southern Polyfabrics</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-5">
-                <div class="info-card p-4 rounded-4 bg-light-subtle border-start border-4 border-red">
-                    <h4 class="fw-bold mb-3">Parekh Chamber of Textile</h4>
-                    <p class="small text-muted mb-4" style="font-size: 17px;">Join our extensive network of retailers, wholesalers, and manufacturers. Become a part of India's most trusted textile association.</p>
-                    
-                    <ul class="list-unstyled mb-4">
-                        <li class="mb-2 small"><i class="fa-solid fa-circle-check text-red me-2"></i> Authorized Official Chamber Support</li>
-                        <li class="mb-2 small"><i class="fa-solid fa-circle-check text-red me-2"></i> Pan-India Business Exposure</li>
-                        <li class="mb-2 small"><i class="fa-solid fa-circle-check text-red me-2"></i> GST & MSME Verified Network</li>
+            
+            <div class="col-xl-6 col-lg-7">
+                <nav class="header__menu">
+                    <ul>
+                        <li ><a href="./index.html">Home</a></li>
+                        <li ><a href="about.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./shop.html">Product</a></li>
+                        <li><a href="#">Pages</a>
+                            <ul class="dropdown">
+                                <li><a href="productgallery.html">Product Photo Gallery</a></li>
+                                <li><a href="management.html">Our Management</a></li>
+                                <li><a href="enquiry.html">Trade Enquiry</a></li>
+                                <li><a href="quotation.html">e-Quotation</a></li>
+                                <li><a href="Auction.html">e-Auction</a></li>
+                                <li><a href="contract.html">Tender & Contract</a></li>
+                                <li><a href="career.html">Career Page</a></li>
+                                <li><a href="circular.html">Circular</a></li>
+                                <li><a href="review.html">Customer Review.</a></li>
+                                <li class="active"><a href="appointment.html">Visit with Appointment </a></li>
+                                <li><a href="mediagallery.html">Media Gallery </a></li>
+                                <li><a href="associates.html">Our Textile Associates </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./blog.html">Blog</a></li>
                     </ul>
-
-                    <a href="membership-form.html" class="btn btn-dark rounded-pill px-4 py-2 w-100 fw-bold">
-                        Apply for Membership <i class="fa-solid fa-arrow-right ms-2"></i>
-                    </a>
-                </div>
-
-                <div class="mt-4 p-3 border rounded-4 d-flex align-items-center">
-                    <div class="icon-box-sm bg-red text-white rounded-circle me-3">
-                        <i class="fa-solid fa-globe"></i>
-                    </div>
-                    <div>
-                        <h6 class="mb-0 fw-bold">www.hcparekh.com</h6>
-                        <small class="text-muted">Explore Our Digital Marketplace</small>
-                    </div>
-                </div>
+                </nav>
             </div>
+
+            <div class="col-lg-2 col-xl-3 text-right">
+                </div>
+        </div>
+        <div class="canvas__open">
+            <i class="fa fa-bars"></i>
         </div>
     </div>
-</section>
+</header>
+    <!-- Header Section End -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
-/* --- Minimalist & Clean Design --- */
-.associates-section { font-family: 'Inter', sans-serif; background: #ffffff; }
-.title-font { font-family: 'Outfit', sans-serif; }
-.fw-800 { font-weight: 800; }
-.fw-300 { font-weight: 300; }
-.text-red { color: #c0392b; }
-.bg-red { background: #c0392b; }
-.ls-2 { letter-spacing: 2px; }
+    /* Floating Container - Bottom Right */
+    .floating-btns {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 
-/* Map Styling */
-.map-container { position: relative; overflow: hidden; background: #fcfcfc; }
-.map-wrapper { min-height: 500px; display: flex; align-items: center; justify-content: center; }
+    /* WhatsApp & Chatbot Buttons */
+    .btn-float {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        cursor: pointer;
+        transition: transform 0.3s ease, background 0.3s ease;
+        text-decoration: none;
+    }
 
-/* Interactive Points (Dots) */
-.map-point {
-    position: absolute;
-    width: 12px; height: 12px;
-    background: #1a1a1a;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 10;
-}
+    .btn-float:hover {
+        transform: scale(1.1);
+    }
 
-.point-label {
-    position: absolute;
-    white-space: nowrap;
-    left: 18px;
-    top: -5px;
-    font-size: 0.65rem;
-    font-weight: 600;
-    color: #333;
-    background: rgba(255,255,255,0.8);
-    padding: 2px 6px;
-    border-radius: 4px;
-    pointer-events: none;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
+    .chat-trigger {
+        background: #c0392b; /* Red */
+        color: white;
+        border: none;
+    }
 
-/* Pulsing Animation */
-.pulse, .pulse-red {
-    position: absolute;
-    width: 100%; height: 100%;
-    border-radius: 50%;
-    animation: mapPulse 2s infinite;
-}
-.pulse { background: rgba(0,0,0,0.2); }
-.pulse-red { background: rgba(192, 57, 43, 0.4); animation: mapPulseRed 2s infinite; }
+    .wa-trigger {
+        background: #25D366; /* WhatsApp Green */
+        color: white;
+    }
 
-@keyframes mapPulse {
-    0% { transform: scale(1); opacity: 1; }
-    100% { transform: scale(3); opacity: 0; }
-}
-@keyframes mapPulseRed {
-    0% { transform: scale(1); opacity: 1; }
-    100% { transform: scale(4); opacity: 0; }
-}
+    /* Chat Window Styling */
+    #chatbot-window {
+        display: none;
+        position: fixed;
+        bottom: 105px;
+        right: 30px;
+        width: 350px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        z-index: 1001;
+        overflow: hidden;
+        font-family: 'Segoe UI', sans-serif;
+        border: 1px solid #eee;
+    }
 
-/* Info Box */
-.icon-box-sm {
-    width: 45px; height: 45px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 1.2rem;
-}
+    .chat-header {
+        background: #111; /* Black Header */
+        color: white;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-/* Responsive */
-@media (max-width: 991px) {
-    .map-wrapper { min-height: 400px; transform: scale(0.9); }
-    .display-5 { font-size: 2.2rem; }
-}
+    .chat-header h4 {
+        margin: 0;
+        font-size: 16px;
+        border-left: 3px solid #c0392b; /* Red Accent */
+        padding-left: 10px;
+    }
+
+    .chat-body {
+        height: 300px;
+        padding: 20px;
+        overflow-y: auto;
+        background: #fdfdfd;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .msg {
+        max-width: 80%;
+        padding: 10px 14px;
+        border-radius: 15px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .msg.bot {
+        background: #f1f1f1;
+        color: #333;
+        align-self: flex-start;
+        border-bottom-left-radius: 2px;
+    }
+
+    .msg.user {
+        background: #c0392b;
+        color: white;
+        align-self: flex-end;
+        border-bottom-right-radius: 2px;
+    }
+
+    .chat-footer {
+        padding: 15px;
+        border-top: 1px solid #eee;
+        display: flex;
+        gap: 10px;
+        background: white;
+    }
+
+    .chat-footer input {
+        flex: 1;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    .chat-footer button {
+        background: #111; /* Black Button */
+        color: white;
+        border: none;
+        padding: 0 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .chat-footer button:hover {
+        background: #c0392b; /* Red on Hover */
+    }
 </style>
-  
+
+<div class="floating-btns">
+    <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="btn-float wa-trigger">
+        <i class="fa-brands fa-whatsapp" style="font-size: 30px;"></i>
+    </a>
+
+    <button onclick="toggleChat()" class="btn-float chat-trigger">
+        <i class="fa fa-commenting" style="font-size: 26px;"></i>
+    </button>
+</div>
+
+<div id="chatbot-window">
+    <div class="chat-header">
+        <h4 class="text-light">PAREKH ASSISTANT</h4>
+        <i class="fa fa-times" onclick="toggleChat()" style="cursor: pointer; opacity: 0.7;"></i>
+    </div>
+    <div class="chat-body" id="chat-body">
+        <div class="msg bot">Welcome to Parekh Group! How can we assist you with our textile services today?</div>
+    </div>
+    <div class="chat-footer">
+        <input type="text" id="user-input" placeholder="Ask something..." onkeypress="handleKey(event)">
+        <button onclick="sendMsg()"><i class="fa fa-paper-plane"></i></button>
+    </div>
+</div>
+
+   <style>
+        /* Your custom map + content styles */
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes pointPulse {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(128, 0, 0, 0.4); }
+            70% { transform: scale(1.1); box-shadow: 0 0 0 10px rgba(128, 0, 0, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(128, 0, 0, 0); }
+        }
+        
+        .map-wrapper { 
+            position: relative; 
+            width: 100%; 
+            max-width: 620px; 
+            height: 600px; 
+            margin: 40px auto; 
+            animation: fadeIn 1.5s ease-in; 
+            border: 1px solid #ddd; 
+            background: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .dot {
+            position: absolute; width: 14px; height: 14px; 
+            background: radial-gradient(circle, #ff4d4d, #FFC300);
+            border: 3px solid #fff; border-radius: 50%; 
+            animation: pointPulse 2s infinite; z-index: 5;
+        }
+        
+        .label {
+            position: absolute; font-weight: bold; font-size: 15px; 
+            color: #302819; white-space: nowrap; 
+            font-family: 'Arial', sans-serif; z-index: 10;
+            text-shadow: 1px 1px 2px white;
+        }
+
+        .custom-content-wrapper {
+            padding: 20px 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .content-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        h1, h2, h3, h4 {
+            margin: 0.5em 0;
+        }
+
+        p, li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Make sure main content starts after sidebar */
+        #colorlib-main-content {
+            margin-left: 0 !important; /* override if template forces left margin */
+            padding-left: 280px;       /* approx sidebar width - adjust if needed */
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 991px) {
+            #colorlib-main-content {
+                padding-left: 0;
+            }
+            .map-wrapper {
+                max-width: 100%;
+                height: 500px;
+            }
+        }
+    
+
+        .map-container {
+            width: 100%;
+            max-width: 900px;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        svg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Hover effect for pins */
+        .pin-group {
+            cursor: pointer;
+            transition: opacity 0.4s ease;
+        }
+
+        .pin-group:hover text {
+            fill: #d32f2f; /* Hover karne par text red ho jayega */
+        }
+
+        /* Animation Classes */
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.5; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        
+    
+    </style>
+
+  <div id="colorlib-main-content">
+    <!-- Yeh naya wrapper map ko right mein laayega -->
+    <div class="map-wrapper-outer">
+        <div class="map-container">
+            <svg viewBox="0 0 1000 1000" id="india-map-svg" style="width: 100%; height: auto;">
+                <rect x="20" y="20" width="960" height="960" fill="none" stroke="#ddd" stroke-width="8" />
+
+                <text x="500" y="70" text-anchor="middle" font-size="29" font-weight="700" fill="#070c12">
+                    HC PAREKH & ASSOCIATES
+                </text>
+
+                <text x="500" y="105" text-anchor="middle" font-size="15" fill="#0f172b">
+                    www.hcparekh.com
+                </text>
+
+                <image 
+                    href="https://img.freepik.com/premium-vector/vector-map-black-outline-india-vector-illustration_686498-514.jpg?w=1060" 
+                    x="40" y="130" width="920" height="820" 
+                    preserveAspectRatio="xMidYMid meet" 
+                    opacity="0.28" 
+                />
+
+                <g id="pins-layer"></g>
+            </svg>
+        </div>
+    </div>
+</div>
    <!-- Footer Section Begin -->
   <footer class="footer bg-dark text-white pt-5 pb-4">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mb-lg-0">
                 <div class="footer__about">
-                    <div class="footer__logo mb-3">
-                        <h4 class="text-white fw-bold title-font">HC PAREKH <span class="text-red">ASSOCIATES</span></h4>
-                    </div>
+                   <div class="header__logo" style="display: flex; justify-content: flex-start; align-items: center; padding: 10px 0;">
+    <a href="index.html" style="display: inline-block;">
+        <img src="img/logo.png" alt="Logo" class="responsive-logo">
+    </a>
+</div>
                     <p class="small opacity-75 mb-4">
                         Leading manufacturers and exporters of premium poly-fabrics and industrial textiles. 
                         Connecting India's textile hubs from Indore HQ to our Southern manufacturing units.
@@ -362,7 +512,7 @@
 
 <style>
 /* Footer Custom Styles */
-.footer { font-family: 'Inter', sans-serif; background-color: #111 !important; }
+.footer { font-family: 'Inter', sans-serif;  }
 .text-red { color: #c0392b; }
 .ls-1 { letter-spacing: 1px; }
 .x-small { font-size: 0.75rem; }
@@ -392,7 +542,272 @@
     box-shadow: none;
     border-color: #c0392b;
 }
+
+/* Floating Container - Bottom Right */
+    .floating-btns {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* WhatsApp & Chatbot Buttons */
+    .btn-float {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        cursor: pointer;
+        transition: transform 0.3s ease, background 0.3s ease;
+        text-decoration: none;
+    }
+
+    .btn-float:hover {
+        transform: scale(1.1);
+    }
+
+    .chat-trigger {
+        background: #c0392b; /* Red */
+        color: white;
+        border: none;
+    }
+
+    .wa-trigger {
+        background: #25D366; /* WhatsApp Green */
+        color: white;
+    }
+
+    /* Chat Window Styling */
+    #chatbot-window {
+        display: none;
+        position: fixed;
+        bottom: 105px;
+        right: 30px;
+        width: 350px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        z-index: 1001;
+        overflow: hidden;
+        font-family: 'Segoe UI', sans-serif;
+        border: 1px solid #eee;
+    }
+
+    .chat-header {
+        background: #111; /* Black Header */
+        color: white;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .chat-header h4 {
+        margin: 0;
+        font-size: 16px;
+        border-left: 3px solid #c0392b; /* Red Accent */
+        padding-left: 10px;
+    }
+
+    .chat-body {
+        height: 300px;
+        padding: 20px;
+        overflow-y: auto;
+        background: #fdfdfd;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .msg {
+        max-width: 80%;
+        padding: 10px 14px;
+        border-radius: 15px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .msg.bot {
+        background: #f1f1f1;
+        color: #333;
+        align-self: flex-start;
+        border-bottom-left-radius: 2px;
+    }
+
+    .msg.user {
+        background: #c0392b;
+        color: white;
+        align-self: flex-end;
+        border-bottom-right-radius: 2px;
+    }
+
+    .chat-footer {
+        padding: 15px;
+        border-top: 1px solid #eee;
+        display: flex;
+        gap: 10px;
+        background: white;
+    }
+
+    .chat-footer input {
+        flex: 1;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    .chat-footer button {
+        background: #111; /* Black Button */
+        color: white;
+        border: none;
+        padding: 0 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .chat-footer button:hover {
+        background: #c0392b; /* Red on Hover */
+    }
 </style>
+
+
+<script>
+    const locations = [
+        { id: 1, name: "Parekh Fabrics", city: "Ahmedabad", x: 330, y: 520 },
+        { id: 2, name: "Parekh Silk", city: "Surat", x: 350, y: 600 },
+        { id: 3, name: "Parekh Rayon", city: "Raipur", x: 498, y: 565 },
+        { id: 4, name: "Parekh Linen", city: "Kolkata", x: 625, y: 545 },
+        { id: 5, name: "Parekh e-Trade Market", city: "Hyderabad", x: 470, y: 645 },
+        { id: 6, name: "Parekh Chamber of Textile", city: "Bangalore", x: 405, y: 755 },
+        { id: 7, name: "Parekh Southern Polyfabrics", city: "Chennai", x: 475, y: 755 },
+    ];
+
+    const pinsLayer = document.getElementById('pins-layer');
+
+    function createPins() {
+        locations.forEach((loc, index) => {
+            // Adjust Label Positions (Logic from your React code)
+            let labelX = loc.x;
+            let labelY = loc.y - 35;
+            let textAnchor = "middle";
+
+            if (loc.id === 6) {
+                labelX = loc.x - 40;
+                labelY = loc.y - 5;
+                textAnchor = "end";
+            } else if (loc.id === 7) {
+                labelX = loc.x + 40;
+                labelY = loc.y - 5;
+                textAnchor = "start";
+            }
+
+            // Create SVG Group
+            const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+            g.setAttribute("class", "pin-group");
+            g.style.opacity = "0";
+            
+            // Animation for appearance
+            setTimeout(() => {
+                g.style.opacity = "1";
+            }, index * 120 + 100);
+
+            // 1. Pulsing Glow
+            const glow = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+            glow.setAttribute("cx", loc.x);
+            glow.setAttribute("cy", loc.y);
+            glow.setAttribute("r", "10");
+            glow.setAttribute("fill", "none");
+            glow.setAttribute("stroke", "#d32f2f");
+            glow.innerHTML = `
+                <animate attributeName="r" values="10;22" dur="1.5s" repeatCount="indefinite" />
+                <animate attributeName="opacity" values="0.7;0" dur="1.5s" repeatCount="indefinite" />
+            `;
+
+            // 2. Blinking Center Dot
+            const dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+            dot.setAttribute("cx", loc.x);
+            dot.setAttribute("cy", loc.y);
+            dot.setAttribute("r", "6");
+            dot.setAttribute("fill", "#d32f2f");
+            dot.innerHTML = `
+                <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite" />
+            `;
+
+            // 3. Text (Name and City)
+            const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+            text.setAttribute("x", labelX);
+            text.setAttribute("y", labelY);
+            text.setAttribute("text-anchor", textAnchor);
+            text.setAttribute("font-size", "14");
+            text.setAttribute("font-weight", "700");
+            text.setAttribute("fill", "#1a237e");
+            text.innerHTML = `
+                <tspan x="${labelX}" dy="0">${loc.name}</tspan>
+                <tspan x="${labelX}" dy="18" font-size="12" font-weight="600" fill="#555">${loc.city}</tspan>
+            `;
+
+            // Append everything
+            g.appendChild(glow);
+            g.appendChild(dot);
+            g.appendChild(text);
+            pinsLayer.appendChild(g);
+            
+            // Click event
+            g.addEventListener('click', () => {
+                console.log("Selected Location:", loc.name);
+                // Aap yahan click par koi bhi action add kar sakte hain
+            });
+        });
+    }
+
+    // Initialize
+    createPins();
+</script>
+
+<script>
+    function toggleChat() {
+        const win = document.getElementById('chatbot-window');
+        win.style.display = (win.style.display === 'block') ? 'none' : 'block';
+    }
+
+    function handleKey(e) {
+        if (e.key === 'Enter') sendMsg();
+    }
+
+    function sendMsg() {
+        const input = document.getElementById('user-input');
+        const body = document.getElementById('chat-body');
+        const val = input.value.trim();
+
+        if (!val) return;
+
+        // User Message
+        body.innerHTML += `<div class="msg user">${val}</div>`;
+        input.value = "";
+        body.scrollTop = body.scrollHeight;
+
+        // Bot Logic
+        setTimeout(() => {
+            let reply = "Our representative will contact you shortly regarding this.";
+            const lowVal = val.toLowerCase();
+            
+            if(lowVal.includes("hello") || lowVal.includes("hi")) reply = "Hello! Hope you are having a great day. How can I help?";
+            if(lowVal.includes("location") || lowVal.includes("store")) reply = "We have 7 locations across India including Ahmedabad, Surat, and Kolkata.";
+            if(lowVal.includes("price") || lowVal.includes("rate")) reply = "For pricing and e-quotations, please visit our 'e-Quotation' page in the menu.";
+
+            body.innerHTML += `<div class="msg bot">${reply}</div>`;
+            body.scrollTop = body.scrollHeight;
+        }, 800);
+    }
+</script>
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>

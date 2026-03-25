@@ -35,15 +35,7 @@
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__close">+</div>
-        <ul class="offcanvas__widget">
-            <li><span class="icon_search search-switch"></span></li>
-            <li><a href="#"><span class="icon_heart_alt"></span>
-                <div class="tip">2</div>
-            </a></li>
-            <li><a href="#"><span class="icon_bag_alt"></span>
-                <div class="tip">2</div>
-            </a></li>
-        </ul>
+  
         <div class="offcanvas__logo">
             <a href="./index.html"><img src="img/logo.png" alt=""></a>
         </div>
@@ -537,7 +529,42 @@
         </div>
     </div>
     <!-- Search End -->
+<script>
+    function toggleChat() {
+        const win = document.getElementById('chatbot-window');
+        win.style.display = (win.style.display === 'block') ? 'none' : 'block';
+    }
 
+    function handleKey(e) {
+        if (e.key === 'Enter') sendMsg();
+    }
+
+    function sendMsg() {
+        const input = document.getElementById('user-input');
+        const body = document.getElementById('chat-body');
+        const val = input.value.trim();
+
+        if (!val) return;
+
+        // User Message
+        body.innerHTML += `<div class="msg user">${val}</div>`;
+        input.value = "";
+        body.scrollTop = body.scrollHeight;
+
+        // Bot Logic
+        setTimeout(() => {
+            let reply = "Our representative will contact you shortly regarding this.";
+            const lowVal = val.toLowerCase();
+            
+            if(lowVal.includes("hello") || lowVal.includes("hi")) reply = "Hello! Hope you are having a great day. How can I help?";
+            if(lowVal.includes("location") || lowVal.includes("store")) reply = "We have 7 locations across India including Ahmedabad, Surat, and Kolkata.";
+            if(lowVal.includes("price") || lowVal.includes("rate")) reply = "For pricing and e-quotations, please visit our 'e-Quotation' page in the menu.";
+
+            body.innerHTML += `<div class="msg bot">${reply}</div>`;
+            body.scrollTop = body.scrollHeight;
+        }, 800);
+    }
+</script>
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

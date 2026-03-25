@@ -35,15 +35,7 @@
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__close">+</div>
-        <ul class="offcanvas__widget">
-            <li><span class="icon_search search-switch"></span></li>
-            <li><a href="#"><span class="icon_heart_alt"></span>
-                <div class="tip">2</div>
-            </a></li>
-            <li><a href="#"><span class="icon_bag_alt"></span>
-                <div class="tip">2</div>
-            </a></li>
-        </ul>
+  
         <div class="offcanvas__logo">
             <a href="./index.html"><img src="img/logo.png" alt=""></a>
         </div>
@@ -57,52 +49,244 @@
 
     <!-- Header Section Begin -->
      <header class="header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-3 col-lg-2">
-                    <div class="header__logo">
-                      <h6 style="font-weight: 800;">PAREKH POLYFABRICS</h6>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-7">
-                    <nav class="header__menu">
-                        <ul>
-                            <li class="active"><a href="./index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                             <li><a href="./contact.html">Contact</a></li>
-                            <li><a href="./shop.html">Product</a></li>
-                            <li><a href="#">Pages</a>
-                                <ul class="dropdown">
-                                    <li><a href="productgallery.html">Product Photo Gallery</a></li>
-                                    <li><a href="management.html">Our Management</a></li>
-                                    <li><a href="enquiry.html">Trade Enquiry</a></li>
-                                    <li><a href="quotation.html">e-Quotation</a></li>
-                                    <li><a href="Auction.html">e-Auction</a></li>
-                                    <li><a href="contract.html">Tender & Contract</a></li>
-                                    <li><a href="career.html">Career Page</a></li>
-                                    <li><a href="circular.html">Circular</a></li>
-                                    <li><a href="review.html">Customer Review.</a></li>
-                                    <li><a href="appointment.html">Visit with Appointment </a></li>
-                                    <li><a href="mediagallery.html">Media Gallery </a></li>
-                                    <li><a href="associates.html">Our Textile Associates </a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./blog.html">Blog</a></li>
-                           
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-lg-3">
-                   
-                </div>
-            </div>
-            <div class="canvas__open">
-                <i class="fa fa-bars"></i>
-            </div>
-        </div>
-    </header>
-    <!-- Header Section End -->
+    <div class="container-fluid">
+        <div class="row align-items-center"> <div class="col-xl-3 col-lg-3">
+               <style>
+    /* Desktop Default Styles */
+    .responsive-logo {
+        height: 80px; /* Desktop height */
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+        display: block;
+        transition: all 0.3s ease;
+    }
 
+    /* Mobile Responsive Styles (Screens smaller than 768px) */
+    @media (max-width: 768px) {
+        .responsive-logo {
+            height: 55px; /* Mobile par thoda chhota taaki menu ke saath fit ho sake */
+        }
+        
+        .header__logo {
+            padding: 5px 0 !important; /* Mobile par extra space kam karne ke liye */
+        }
+    }
+
+    /* Extra Small Screens (Phones) */
+    @media (max-width: 480px) {
+        .responsive-logo {
+            height: 45px;
+            margin: 15px; 
+        }
+    }
+</style>
+
+<div class="header__logo" style="display: flex; justify-content: flex-start; align-items: center; padding: 10px 0;">
+    <a href="index.html" style="display: inline-block;">
+        <img src="img/logo.png" alt="Logo" class="responsive-logo">
+    </a>
+</div>
+            </div>
+            
+            <div class="col-xl-6 col-lg-7">
+                <nav class="header__menu">
+                    <ul>
+                        <li ><a href="./index.html">Home</a></li>
+                        <li ><a href="about.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./shop.html">Product</a></li>
+                        <li><a href="#">Pages</a>
+                            <ul class="dropdown">
+                                <li><a href="productgallery.html">Product Photo Gallery</a></li>
+                                <li><a href="management.html">Our Management</a></li>
+                                <li><a href="enquiry.html">Trade Enquiry</a></li>
+                                <li><a href="quotation.html">e-Quotation</a></li>
+                                <li><a href="Auction.html">e-Auction</a></li>
+                                <li><a href="contract.html">Tender & Contract</a></li>
+                                <li><a href="career.html">Career Page</a></li>
+                                <li><a href="circular.html">Circular</a></li>
+                                <li><a href="review.html">Customer Review.</a></li>
+                                <li class="active"><a href="appointment.html">Visit with Appointment </a></li>
+                                <li><a href="mediagallery.html">Media Gallery </a></li>
+                                <li><a href="associates.html">Our Textile Associates </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-lg-2 col-xl-3 text-right">
+                </div>
+        </div>
+        <div class="canvas__open">
+            <i class="fa fa-bars"></i>
+        </div>
+    </div>
+</header>
+    <!-- Header Section End -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    /* Floating Container - Bottom Right */
+    .floating-btns {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* WhatsApp & Chatbot Buttons */
+    .btn-float {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        cursor: pointer;
+        transition: transform 0.3s ease, background 0.3s ease;
+        text-decoration: none;
+    }
+
+    .btn-float:hover {
+        transform: scale(1.1);
+    }
+
+    .chat-trigger {
+        background: #c0392b; /* Red */
+        color: white;
+        border: none;
+    }
+
+    .wa-trigger {
+        background: #25D366; /* WhatsApp Green */
+        color: white;
+    }
+
+    /* Chat Window Styling */
+    #chatbot-window {
+        display: none;
+        position: fixed;
+        bottom: 105px;
+        right: 30px;
+        width: 350px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        z-index: 1001;
+        overflow: hidden;
+        font-family: 'Segoe UI', sans-serif;
+        border: 1px solid #eee;
+    }
+
+    .chat-header {
+        background: #111; /* Black Header */
+        color: white;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .chat-header h4 {
+        margin: 0;
+        font-size: 16px;
+        border-left: 3px solid #c0392b; /* Red Accent */
+        padding-left: 10px;
+    }
+
+    .chat-body {
+        height: 300px;
+        padding: 20px;
+        overflow-y: auto;
+        background: #fdfdfd;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .msg {
+        max-width: 80%;
+        padding: 10px 14px;
+        border-radius: 15px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .msg.bot {
+        background: #f1f1f1;
+        color: #333;
+        align-self: flex-start;
+        border-bottom-left-radius: 2px;
+    }
+
+    .msg.user {
+        background: #c0392b;
+        color: white;
+        align-self: flex-end;
+        border-bottom-right-radius: 2px;
+    }
+
+    .chat-footer {
+        padding: 15px;
+        border-top: 1px solid #eee;
+        display: flex;
+        gap: 10px;
+        background: white;
+    }
+
+    .chat-footer input {
+        flex: 1;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    .chat-footer button {
+        background: #111; /* Black Button */
+        color: white;
+        border: none;
+        padding: 0 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .chat-footer button:hover {
+        background: #c0392b; /* Red on Hover */
+    }
+</style>
+
+<div class="floating-btns">
+    <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="btn-float wa-trigger">
+        <i class="fa-brands fa-whatsapp" style="font-size: 30px;"></i>
+    </a>
+
+    <button onclick="toggleChat()" class="btn-float chat-trigger">
+        <i class="fa fa-commenting" style="font-size: 26px;"></i>
+    </button>
+</div>
+
+<div id="chatbot-window">
+    <div class="chat-header">
+        <h4 class="text-light">PAREKH ASSISTANT</h4>
+        <i class="fa fa-times" onclick="toggleChat()" style="cursor: pointer; opacity: 0.7;"></i>
+    </div>
+    <div class="chat-body" id="chat-body">
+        <div class="msg bot">Welcome to Parekh Group! How can we assist you with our textile services today?</div>
+    </div>
+    <div class="chat-footer">
+        <input type="text" id="user-input" placeholder="Ask something..." onkeypress="handleKey(event)">
+        <button onclick="sendMsg()"><i class="fa fa-paper-plane"></i></button>
+    </div>
+</div>
     <!-- Breadcrumb Begin -->
     <div class="breadcrumb-option">
         <div class="container">
@@ -262,9 +446,11 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mb-lg-0">
                 <div class="footer__about">
-                    <div class="footer__logo mb-3">
-                        <h4 class="text-white fw-bold title-font">HC PAREKH <span class="text-red">ASSOCIATES</span></h4>
-                    </div>
+                   <div class="header__logo" style="display: flex; justify-content: flex-start; align-items: center; padding: 10px 0;">
+    <a href="index.html" style="display: inline-block;">
+        <img src="img/logo.png" alt="Logo" class="responsive-logo">
+    </a>
+</div>
                     <p class="small opacity-75 mb-4">
                         Leading manufacturers and exporters of premium poly-fabrics and industrial textiles. 
                         Connecting India's textile hubs from Indore HQ to our Southern manufacturing units.
@@ -342,7 +528,7 @@
 
 <style>
 /* Footer Custom Styles */
-.footer { font-family: 'Inter', sans-serif; background-color: #111 !important; }
+.footer { font-family: 'Inter', sans-serif;  }
 .text-red { color: #c0392b; }
 .ls-1 { letter-spacing: 1px; }
 .x-small { font-size: 0.75rem; }
@@ -372,7 +558,180 @@
     box-shadow: none;
     border-color: #c0392b;
 }
+
+/* Floating Container - Bottom Right */
+    .floating-btns {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* WhatsApp & Chatbot Buttons */
+    .btn-float {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        cursor: pointer;
+        transition: transform 0.3s ease, background 0.3s ease;
+        text-decoration: none;
+    }
+
+    .btn-float:hover {
+        transform: scale(1.1);
+    }
+
+    .chat-trigger {
+        background: #c0392b; /* Red */
+        color: white;
+        border: none;
+    }
+
+    .wa-trigger {
+        background: #25D366; /* WhatsApp Green */
+        color: white;
+    }
+
+    /* Chat Window Styling */
+    #chatbot-window {
+        display: none;
+        position: fixed;
+        bottom: 105px;
+        right: 30px;
+        width: 350px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        z-index: 1001;
+        overflow: hidden;
+        font-family: 'Segoe UI', sans-serif;
+        border: 1px solid #eee;
+    }
+
+    .chat-header {
+        background: #111; /* Black Header */
+        color: white;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .chat-header h4 {
+        margin: 0;
+        font-size: 16px;
+        border-left: 3px solid #c0392b; /* Red Accent */
+        padding-left: 10px;
+    }
+
+    .chat-body {
+        height: 300px;
+        padding: 20px;
+        overflow-y: auto;
+        background: #fdfdfd;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .msg {
+        max-width: 80%;
+        padding: 10px 14px;
+        border-radius: 15px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .msg.bot {
+        background: #f1f1f1;
+        color: #333;
+        align-self: flex-start;
+        border-bottom-left-radius: 2px;
+    }
+
+    .msg.user {
+        background: #c0392b;
+        color: white;
+        align-self: flex-end;
+        border-bottom-right-radius: 2px;
+    }
+
+    .chat-footer {
+        padding: 15px;
+        border-top: 1px solid #eee;
+        display: flex;
+        gap: 10px;
+        background: white;
+    }
+
+    .chat-footer input {
+        flex: 1;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    .chat-footer button {
+        background: #111; /* Black Button */
+        color: white;
+        border: none;
+        padding: 0 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .chat-footer button:hover {
+        background: #c0392b; /* Red on Hover */
+    }
 </style>
+
+
+<script>
+    function toggleChat() {
+        const win = document.getElementById('chatbot-window');
+        win.style.display = (win.style.display === 'block') ? 'none' : 'block';
+    }
+
+    function handleKey(e) {
+        if (e.key === 'Enter') sendMsg();
+    }
+
+    function sendMsg() {
+        const input = document.getElementById('user-input');
+        const body = document.getElementById('chat-body');
+        const val = input.value.trim();
+
+        if (!val) return;
+
+        // User Message
+        body.innerHTML += `<div class="msg user">${val}</div>`;
+        input.value = "";
+        body.scrollTop = body.scrollHeight;
+
+        // Bot Logic
+        setTimeout(() => {
+            let reply = "Our representative will contact you shortly regarding this.";
+            const lowVal = val.toLowerCase();
+            
+            if(lowVal.includes("hello") || lowVal.includes("hi")) reply = "Hello! Hope you are having a great day. How can I help?";
+            if(lowVal.includes("location") || lowVal.includes("store")) reply = "We have 7 locations across India including Ahmedabad, Surat, and Kolkata.";
+            if(lowVal.includes("price") || lowVal.includes("rate")) reply = "For pricing and e-quotations, please visit our 'e-Quotation' page in the menu.";
+
+            body.innerHTML += `<div class="msg bot">${reply}</div>`;
+            body.scrollTop = body.scrollHeight;
+        }, 800);
+    }
+</script>
+
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>

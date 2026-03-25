@@ -35,15 +35,7 @@
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__close">+</div>
-        <ul class="offcanvas__widget">
-            <li><span class="icon_search search-switch"></span></li>
-            <li><a href="#"><span class="icon_heart_alt"></span>
-                <div class="tip">2</div>
-            </a></li>
-            <li><a href="#"><span class="icon_bag_alt"></span>
-                <div class="tip">2</div>
-            </a></li>
-        </ul>
+  
         <div class="offcanvas__logo">
             <a href="./index.html"><img src="img/logo.png" alt=""></a>
         </div>
@@ -56,51 +48,245 @@
     <!-- Offcanvas Menu End -->
 
     <!-- Header Section Begin -->
-    <header class="header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-3 col-lg-2">
-                    <div class="header__logo">
-                      <h6 style="font-weight: 800;">PAREKH POLYFABRICS</h6>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-7">
-                    <nav class="header__menu">
-                        <ul>
-                            <li class="active"><a href="./index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                             <li><a href="./contact.html">Contact</a></li>
-                            <li><a href="./shop.html">Product</a></li>
-                            <li><a href="#">Pages</a>
-                                <ul class="dropdown">
-                                    <li><a href="productgallery.html">Product Photo Gallery</a></li>
-                                    <li><a href="management.html">Our Management</a></li>
-                                    <li><a href="enquiry.html">Trade Enquiry</a></li>
-                                    <li><a href="quotation.html">e-Quotation</a></li>
-                                    <li><a href="Auction.html">e-Auction</a></li>
-                                    <li><a href="contract.html">Tender & Contract</a></li>
-                                    <li><a href="career.html">Career Page</a></li>
-                                    <li><a href="circular.html">Circular</a></li>
-                                    <li><a href="review.html">Customer Review.</a></li>
-                                    <li><a href="appointment.html">Visit with Appointment </a></li>
-                                    <li><a href="mediagallery.html">Media Gallery </a></li>
-                                    <li><a href="associates.html">Our Textile Associates </a></li>
-                                </ul>
-                            </li>
-                            <li><a href="./blog.html">Blog</a></li>
-                           
-                        </ul>
-                    </nav>
-                </div>
-                <div class="col-lg-3">
-                   
-                </div>
+   <!-- Header Section Begin -->
+   <header class="header">
+    <div class="container-fluid">
+        <div class="row align-items-center"> <div class="col-xl-3 col-lg-3">
+               <style>
+    /* Desktop Default Styles */
+    .responsive-logo {
+        height: 80px; /* Desktop height */
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    /* Mobile Responsive Styles (Screens smaller than 768px) */
+    @media (max-width: 768px) {
+        .responsive-logo {
+            height: 55px; /* Mobile par thoda chhota taaki menu ke saath fit ho sake */
+        }
+        
+        .header__logo {
+            padding: 5px 0 !important; /* Mobile par extra space kam karne ke liye */
+        }
+    }
+
+    /* Extra Small Screens (Phones) */
+    @media (max-width: 480px) {
+        .responsive-logo {
+            height: 45px;
+            margin: 15px; 
+        }
+    }
+</style>
+
+<div class="header__logo" style="display: flex; justify-content: flex-start; align-items: center; padding: 10px 0;">
+    <a href="index.html" style="display: inline-block;">
+        <img src="img/logo.png" alt="Logo" class="responsive-logo">
+    </a>
+</div>
             </div>
-            <div class="canvas__open">
-                <i class="fa fa-bars"></i>
+            
+            <div class="col-xl-6 col-lg-7">
+                <nav class="header__menu">
+                    <ul>
+                        <li ><a href="./index.html">Home</a></li>
+                        <li class="active"><a href="about.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./shop.html">Product</a></li>
+                        <li><a href="#">Pages</a>
+                            <ul class="dropdown">
+                                <li><a href="productgallery.html">Product Photo Gallery</a></li>
+                                <li><a href="management.html">Our Management</a></li>
+                                <li><a href="enquiry.html">Trade Enquiry</a></li>
+                                <li><a href="quotation.html">e-Quotation</a></li>
+                                <li><a href="Auction.html">e-Auction</a></li>
+                                <li><a href="contract.html">Tender & Contract</a></li>
+                                <li><a href="career.html">Career Page</a></li>
+                                <li><a href="circular.html">Circular</a></li>
+                                <li><a href="review.html">Customer Review.</a></li>
+                                <li><a href="appointment.html">Visit with Appointment </a></li>
+                                <li><a href="mediagallery.html">Media Gallery </a></li>
+                                <li><a href="associates.html">Our Textile Associates </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./blog.html">Blog</a></li>
+                    </ul>
+                </nav>
             </div>
+
+            <div class="col-lg-2 col-xl-3 text-right">
+                </div>
         </div>
-    </header>
+        <div class="canvas__open">
+            <i class="fa fa-bars"></i>
+        </div>
+    </div>
+</header>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    /* Floating Container - Bottom Right */
+    .floating-btns {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* WhatsApp & Chatbot Buttons */
+    .btn-float {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        cursor: pointer;
+        transition: transform 0.3s ease, background 0.3s ease;
+        text-decoration: none;
+    }
+
+    .btn-float:hover {
+        transform: scale(1.1);
+    }
+
+    .chat-trigger {
+        background: #c0392b; /* Red */
+        color: white;
+        border: none;
+    }
+
+    .wa-trigger {
+        background: #25D366; /* WhatsApp Green */
+        color: white;
+    }
+
+    /* Chat Window Styling */
+    #chatbot-window {
+        display: none;
+        position: fixed;
+        bottom: 105px;
+        right: 30px;
+        width: 350px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        z-index: 1001;
+        overflow: hidden;
+        font-family: 'Segoe UI', sans-serif;
+        border: 1px solid #eee;
+    }
+
+    .chat-header {
+        background: #111; /* Black Header */
+        color: white;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .chat-header h4 {
+        margin: 0;
+        font-size: 16px;
+        border-left: 3px solid #c0392b; /* Red Accent */
+        padding-left: 10px;
+    }
+
+    .chat-body {
+        height: 300px;
+        padding: 20px;
+        overflow-y: auto;
+        background: #fdfdfd;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .msg {
+        max-width: 80%;
+        padding: 10px 14px;
+        border-radius: 15px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .msg.bot {
+        background: #f1f1f1;
+        color: #333;
+        align-self: flex-start;
+        border-bottom-left-radius: 2px;
+    }
+
+    .msg.user {
+        background: #c0392b;
+        color: white;
+        align-self: flex-end;
+        border-bottom-right-radius: 2px;
+    }
+
+    .chat-footer {
+        padding: 15px;
+        border-top: 1px solid #eee;
+        display: flex;
+        gap: 10px;
+        background: white;
+    }
+
+    .chat-footer input {
+        flex: 1;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    .chat-footer button {
+        background: #111; /* Black Button */
+        color: white;
+        border: none;
+        padding: 0 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .chat-footer button:hover {
+        background: #c0392b; /* Red on Hover */
+    }
+</style>
+
+<div class="floating-btns">
+    <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="btn-float wa-trigger">
+        <i class="fa-brands fa-whatsapp" style="font-size: 30px;"></i>
+    </a>
+
+    <button onclick="toggleChat()" class="btn-float chat-trigger">
+        <i class="fa fa-commenting" style="font-size: 26px;"></i>
+    </button>
+</div>
+
+<div id="chatbot-window">
+    <div class="chat-header">
+        <h4 class="text-light">PAREKH ASSISTANT</h4>
+        <i class="fa fa-times" onclick="toggleChat()" style="cursor: pointer; opacity: 0.7;"></i>
+    </div>
+    <div class="chat-body" id="chat-body">
+        <div class="msg bot">Welcome to Parekh Group! How can we assist you with our textile services today?</div>
+    </div>
+    <div class="chat-footer">
+        <input type="text" id="user-input" placeholder="Ask something..." onkeypress="handleKey(event)">
+        <button onclick="sendMsg()"><i class="fa fa-paper-plane"></i></button>
+    </div>
+</div>
     <!-- Header Section End -->
 
     <!-- Categories Section Begin -->
@@ -583,11 +769,7 @@
                 <div class="product__item">
                     <div class="product__item__pic set-bg" data-setbg="https://thumbs.dreamstime.com/b/close-up-white-cotton-fabric-texture-background-167937611.jpg">
                         <div class="label new">New</div>
-                        <ul class="product__hover">
-                            <li><a href="https://thumbs.dreamstime.com/b/close-up-white-cotton-fabric-texture-background-167937611.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
-                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
+                    
                     </div>
                     <div class="product__item__text">
                         <h6><a href="#">Premium Cotton Shirting Fabric</a></h6>
@@ -603,11 +785,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 mix polycotton">
                 <div class="product__item">
                     <div class="product__item__pic set-bg" data-setbg="https://media.istockphoto.com/id/545552524/photo/textile-detail.webp?a=1&b=1&s=612x612&w=0&k=20&c=EH8KHGYsp6MshDMXMJbg86izUy386bWb34jpv9bkW2E=">
-                        <ul class="product__hover">
-                            <li><a href="https://www.bandjfabrics.com/sites/default/files/styles/prodpage/public/1326/Poly%20Cotton%20Blend%20Stretch%20Twill%20Suiting%20in%20Heather%20Grey_img_9581.jpg?itok=wlbIUi5p" class="image-popup"><span class="arrow_expand"></span></a></li>
-                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
+                       
                     </div>
                     <div class="product__item__text">
                         <h6><a href="#">Polycotton Blend – Durable & Wrinkle-Free</a></h6>
@@ -624,11 +802,7 @@
                 <div class="product__item">
                     <div class="product__item__pic set-bg" data-setbg="https://thumbs.dreamstime.com/b/observe-golden-silk-fabric-showing-texture-shiny-luxurious-fluid-design-389672504.jpg">
                         <div class="label new">New</div>
-                        <ul class="product__hover">
-                            <li><a href="https://thumbs.dreamstime.com/b/observe-golden-silk-fabric-showing-texture-shiny-luxurious-fluid-design-389672504.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
-                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
+                       
                     </div>
                     <div class="product__item__text">
                         <h6><a href="#">Luxury Pure Silk Saree Fabric</a></h6>
@@ -644,11 +818,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 mix polyester">
                 <div class="product__item">
                     <div class="product__item__pic set-bg" data-setbg="https://images.unsplash.com/photo-1640746942093-cec8e647596d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8UG9seWVzdGVyJTIwRmFicmljfGVufDB8fDB8fHww">
-                        <ul class="product__hover">
-                            <li><a href="https://www.poundametre.com/cdn/shop/articles/what-is-polyester-fabric-427550.jpg?v=1695352842&width=1600" class="image-popup"><span class="arrow_expand"></span></a></li>
-                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
+                       
                     </div>
                     <div class="product__item__text">
                         <h6><a href="#">High-Performance Polyester Fabric</a></h6>
@@ -664,11 +834,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 mix nylon">
                 <div class="product__item">
                     <div class="product__item__pic set-bg" data-setbg="https://thumbs.dreamstime.com/b/texture-nylon-polyester-material-has-strong-durability-as-base-material-backpacks-close-up-photo-texture-426187251.jpg">
-                        <ul class="product__hover">
-                            <li><a href="https://thumbs.dreamstime.com/b/texture-nylon-polyester-material-has-strong-durability-as-base-material-backpacks-close-up-photo-texture-426187251.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
-                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
+                      
                     </div>
                     <div class="product__item__text">
                         <h6><a href="#">Durable Nylon Activewear Fabric</a></h6>
@@ -685,11 +851,7 @@
                 <div class="product__item">
                     <div class="product__item__pic set-bg" data-setbg="https://images.unsplash.com/photo-1642761474112-b2d69efe9eaf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8U2hlZXIlMjBQb2x5ZXN0ZXIlMjBDaGlmZm9uJTIwZm9yJTIwRHVwYXR0YXN8ZW58MHx8MHx8fDA%3D">
                         <div class="label new">New</div>
-                        <ul class="product__hover">
-                            <li><a href="https://m.media-amazon.com/images/I/91LzSdTqYaL.jpg_BO30,255,255,255_UF750,750_SR1910,1000,0,C_QL100_.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
-                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
+                     
                     </div>
                     <div class="product__item__text">
                         <h6><a href="#">Sheer Polyester Chiffon for Dupattas</a></h6>
@@ -705,11 +867,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 mix georgette">
                 <div class="product__item">
                     <div class="product__item__pic set-bg" data-setbg="https://i.etsystatic.com/9995368/r/il/f810b3/1079702661/il_fullxfull.1079702661_bnu2.jpg">
-                        <ul class="product__hover">
-                            <li><a href="https://i.etsystatic.com/9995368/r/il/f810b3/1079702661/il_fullxfull.1079702661_bnu2.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
-                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
+                      
                     </div>
                     <div class="product__item__text">
                         <h6><a href="#">Crinkle Georgette for Gowns & Sarees</a></h6>
@@ -725,11 +883,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 mix spandex">
                 <div class="product__item">
                     <div class="product__item__pic set-bg" data-setbg="https://remnantwarehouse.com/media/catalog/product/cache/d14d7ede3bf7b22ef415580108b681a9/image/1688114811/2-way-stretch-spandex-lining-fawn-5459-the-remnant-warehouse.jpg">
-                        <ul class="product__hover">
-                            <li><a href="https://remnantwarehouse.com/media/catalog/product/cache/d14d7ede3bf7b22ef415580108b681a9/image/1688114811/2-way-stretch-spandex-lining-fawn-5459-the-remnant-warehouse.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
-                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
+                        
                     </div>
                     <div class="product__item__text">
                         <h6><a href="#">Stretch Spandex for Leggings & Activewear</a></h6>
@@ -746,11 +900,7 @@
                 <div class="product__item">
                     <div class="product__item__pic set-bg" data-setbg="https://thumbs.dreamstime.com/b/luxurious-burgundy-velvet-fabric-features-soft-draped-folds-rich-texture-deep-color-elegant-material-offers-plush-smooth-finish-395221381.jpg">
                         <div class="label sale">Sale</div>
-                        <ul class="product__hover">
-                            <li><a href="https://thumbs.dreamstime.com/b/luxurious-burgundy-velvet-fabric-features-soft-draped-folds-rich-texture-deep-color-elegant-material-offers-plush-smooth-finish-395221381.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
-                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
+                     
                     </div>
                     <div class="product__item__text">
                         <h6><a href="#">Plush Velvet for Evening Wear</a></h6>
@@ -766,11 +916,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 mix rayon">
                 <div class="product__item">
                     <div class="product__item__pic set-bg" data-setbg="https://plus.unsplash.com/premium_photo-1770294856128-b4325ae5c7f6?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                        <ul class="product__hover">
-                            <li><a href="https://www.poundametre.com/cdn/shop/articles/what-is-viscose-fabric-173101.jpg?v=1695352853&width=1600" class="image-popup"><span class="arrow_expand"></span></a></li>
-                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
+                      
                     </div>
                     <div class="product__item__text">
                         <h6><a href="#">Soft Rayon Kurtis & Dress Fabric</a></h6>
@@ -786,11 +932,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 mix viscose">
                 <div class="product__item">
                     <div class="product__item__pic set-bg" data-setbg="https://images.unsplash.com/photo-1635329948691-a0ae0452944a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8QnJlYXRoYWJsZSUyMFZpc2Nvc2UlMjBSYXlvbiUyMEJsZW5kfGVufDB8fDB8fHww">
-                        <ul class="product__hover">
-                            <li><a href="https://megaapparel.com/blog/wp-content/uploads/2024/11/rayon-material-types.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
-                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
+                  
                     </div>
                     <div class="product__item__text">
                         <h6><a href="#">Breathable Viscose Rayon Blend</a></h6>
@@ -806,11 +948,7 @@
             <div class="col-lg-3 col-md-4 col-sm-6 mix linen">
                 <div class="product__item">
                     <div class="product__item__pic set-bg" data-setbg="https://thumbs.dreamstime.com/b/crisp-woven-linen-texture-natural-slightly-rough-surface-linen-texture-background-features-intricate-weave-330786665.jpg">
-                        <ul class="product__hover">
-                            <li><a href="https://thumbs.dreamstime.com/b/crisp-woven-linen-texture-natural-slightly-rough-surface-linen-texture-background-features-intricate-weave-330786665.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
-                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
+                      
                     </div>
                     <div class="product__item__text">
                         <h6><a href="#">Natural Crisp Linen Summer Fabric</a></h6>
@@ -827,11 +965,7 @@
                 <div class="product__item sale">
                     <div class="product__item__pic set-bg" data-setbg="https://www.mh-chine.com/images/blog/hot/shiny_material_fabric-3.webp">
                         <div class="label sale">Sale</div>
-                        <ul class="product__hover">
-                            <li><a href="https://www.mh-chine.com/images/blog/hot/shiny_material_fabric-3.webp" class="image-popup"><span class="arrow_expand"></span></a></li>
-                            <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                            <li><a href="#"><span class="icon_bag_alt"></span></a></li>
-                        </ul>
+                   
                     </div>
                     <div class="product__item__text">
                         <h6><a href="#">Glossy Satin for Blouses & Linings</a></h6>
@@ -1433,9 +1567,11 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mb-lg-0">
                 <div class="footer__about">
-                    <div class="footer__logo mb-3">
-                        <h4 class="text-white fw-bold title-font">HC PAREKH <span class="text-red">ASSOCIATES</span></h4>
-                    </div>
+                   <div class="header__logo" style="display: flex; justify-content: flex-start; align-items: center; padding: 10px 0;">
+    <a href="index.html" style="display: inline-block;">
+        <img src="img/logo.png" alt="Logo" class="responsive-logo">
+    </a>
+</div>
                     <p class="small opacity-75 mb-4">
                         Leading manufacturers and exporters of premium poly-fabrics and industrial textiles. 
                         Connecting India's textile hubs from Indore HQ to our Southern manufacturing units.
@@ -1513,7 +1649,7 @@
 
 <style>
 /* Footer Custom Styles */
-.footer { font-family: 'Inter', sans-serif; background-color: #111 !important; }
+.footer { font-family: 'Inter', sans-serif;  }
 .text-red { color: #c0392b; }
 .ls-1 { letter-spacing: 1px; }
 .x-small { font-size: 0.75rem; }
@@ -1543,8 +1679,178 @@
     box-shadow: none;
     border-color: #c0392b;
 }
+
+/* Floating Container - Bottom Right */
+    .floating-btns {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* WhatsApp & Chatbot Buttons */
+    .btn-float {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        cursor: pointer;
+        transition: transform 0.3s ease, background 0.3s ease;
+        text-decoration: none;
+    }
+
+    .btn-float:hover {
+        transform: scale(1.1);
+    }
+
+    .chat-trigger {
+        background: #c0392b; /* Red */
+        color: white;
+        border: none;
+    }
+
+    .wa-trigger {
+        background: #25D366; /* WhatsApp Green */
+        color: white;
+    }
+
+    /* Chat Window Styling */
+    #chatbot-window {
+        display: none;
+        position: fixed;
+        bottom: 105px;
+        right: 30px;
+        width: 350px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        z-index: 1001;
+        overflow: hidden;
+        font-family: 'Segoe UI', sans-serif;
+        border: 1px solid #eee;
+    }
+
+    .chat-header {
+        background: #111; /* Black Header */
+        color: white;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .chat-header h4 {
+        margin: 0;
+        font-size: 16px;
+        border-left: 3px solid #c0392b; /* Red Accent */
+        padding-left: 10px;
+    }
+
+    .chat-body {
+        height: 300px;
+        padding: 20px;
+        overflow-y: auto;
+        background: #fdfdfd;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .msg {
+        max-width: 80%;
+        padding: 10px 14px;
+        border-radius: 15px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .msg.bot {
+        background: #f1f1f1;
+        color: #333;
+        align-self: flex-start;
+        border-bottom-left-radius: 2px;
+    }
+
+    .msg.user {
+        background: #c0392b;
+        color: white;
+        align-self: flex-end;
+        border-bottom-right-radius: 2px;
+    }
+
+    .chat-footer {
+        padding: 15px;
+        border-top: 1px solid #eee;
+        display: flex;
+        gap: 10px;
+        background: white;
+    }
+
+    .chat-footer input {
+        flex: 1;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    .chat-footer button {
+        background: #111; /* Black Button */
+        color: white;
+        border: none;
+        padding: 0 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .chat-footer button:hover {
+        background: #c0392b; /* Red on Hover */
+    }
 </style>
 
+<script>
+    function toggleChat() {
+        const win = document.getElementById('chatbot-window');
+        win.style.display = (win.style.display === 'block') ? 'none' : 'block';
+    }
+
+    function handleKey(e) {
+        if (e.key === 'Enter') sendMsg();
+    }
+
+    function sendMsg() {
+        const input = document.getElementById('user-input');
+        const body = document.getElementById('chat-body');
+        const val = input.value.trim();
+
+        if (!val) return;
+
+        // User Message
+        body.innerHTML += `<div class="msg user">${val}</div>`;
+        input.value = "";
+        body.scrollTop = body.scrollHeight;
+
+        // Bot Logic
+        setTimeout(() => {
+            let reply = "Our representative will contact you shortly regarding this.";
+            const lowVal = val.toLowerCase();
+            
+            if(lowVal.includes("hello") || lowVal.includes("hi")) reply = "Hello! Hope you are having a great day. How can I help?";
+            if(lowVal.includes("location") || lowVal.includes("store")) reply = "We have 7 locations across India including Ahmedabad, Surat, and Kolkata.";
+            if(lowVal.includes("price") || lowVal.includes("rate")) reply = "For pricing and e-quotations, please visit our 'e-Quotation' page in the menu.";
+
+            body.innerHTML += `<div class="msg bot">${reply}</div>`;
+            body.scrollTop = body.scrollHeight;
+        }, 800);
+    }
+</script>
 <!-- Js Plugins -->
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
